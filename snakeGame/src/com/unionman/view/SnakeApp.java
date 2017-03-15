@@ -20,7 +20,7 @@ public class SnakeApp extends Thread{
 		
 		grid = new Grid(400, 400);
 		window = new JFrame();
-		window.setPreferredSize(new Dimension(405, 410));
+		window.setPreferredSize(new Dimension(405, 430));
 		Container component = window.getContentPane();
 		
 		GameView gameView = new GameView(grid);

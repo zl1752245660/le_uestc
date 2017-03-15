@@ -22,7 +22,7 @@ public class Snake {
 		switch (dir) {
 		case UP:
 			
-			if((firstNode.getY() == food.getY() + 20) && (firstNode.getX() == food.getX()) ) {
+			if((firstNode.getY() <= food.getY() + 20) && (firstNode.getX() == food.getX()) ) {
 				isEat = true;
 			} else {
 				isEat = false;
@@ -74,10 +74,12 @@ public class Snake {
 	
 	public void addNode() {
 		Node node = body.get(0);
+		
+		System.out.println("@le.zhang X = " + node.getX() +" Y = "+node.getY());
 		switch(dir) {
 		case DOWN:
 			
-			if (node.getY() == 400) {
+			if (node.getY() == 380) {
 				node = new Node( node.getX() ,-20);
 			}
 			body.add(0, new Node(node.getX(), node.getY() + 20));
@@ -104,7 +106,7 @@ public class Snake {
 			
 		case RIGHT:
 			
-			if (node.getX() == 400) {
+			if (node.getX() == 380) {
 				node = new Node(-20, node.getY());
 			}
 			body.add(0, new Node(node.getX() + 20 , node.getY()));
