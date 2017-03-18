@@ -7,6 +7,7 @@ import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
 
 import com.unionman.entity.Direction;
 import com.unionman.entity.Grid;
+import com.unionman.uti.Constant;
 import com.unionman.view.GameView;
 
 public class GameController implements KeyListener,Runnable{
@@ -57,13 +58,16 @@ public class GameController implements KeyListener,Runnable{
 	public void run() {
 		while (running) {
 			try {
-				Thread.sleep(200);
+				Thread.sleep(Constant.speed);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			grid.snakeMove();
+			if(grid.getSnake().isHitBody()) {
+				Constant.openDialog = true;
+				break;
+			}
 			gameView.draw();
 		}
 	}
-
 }

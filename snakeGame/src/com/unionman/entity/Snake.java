@@ -1,11 +1,12 @@
 package com.unionman.entity;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Snake {
 
-	private List<Node> body = new LinkedList<Node>();
+	private List<Node> body = new ArrayList<Node>();
 	private Direction dir = Direction.LEFT;
 	
 	public Snake() {
@@ -72,10 +73,23 @@ public class Snake {
 		return body.get(0);
 	}
 	
+	public synchronized boolean isHitBody() {
+		Node first = getHead();
+		List<Node> this_body = getBody();
+		for(int i = 1; i < this_body.size(); i++) {
+			
+			if(first.getX() == this_body.get(i).getX() &&
+					first.getY() == this_body.get(i).getY()) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public void addNode() {
 		Node node = body.get(0);
 		
-		System.out.println("@le.zhang X = " + node.getX() +" Y = "+node.getY());
+		//System.out.println("@le.zhang X = " + node.getX() +" Y = "+node.getY());
 		switch(dir) {
 		case DOWN:
 			
