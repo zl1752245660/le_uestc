@@ -5,17 +5,22 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.le.util.Constants;
-
+/**
+ * 有向图的节点类
+ * @author le.zhang
+ *
+ * @param <T>
+ */
 public class Vertex<T> {
 
-	private T lable;
-	private int color;
-	private Vertex<T> previousVertex;
-	private List<Edge<T>> edgeList;
-	private int depth;
+	private T lable;		//当前节点的标识数据
+	private int color;		//当前节点的颜色
+	private Vertex<T> previousVertex;		//该节点的前驱结点
+	private List<Edge<T>> edgeList;		//保存与该节点连接的边
+	private int depth;		//深度 ，在BFS广度优先搜索中用到
 	
-	private int d;	//ʱ�����������һ�θýڵ㱻���ֵ�ʱ�䣬���������������ʱ���õ�
-	private int f;	//ʱ���������������ɶԸýڵ���ڽ�����ɨ���ʱ��
+	private int d;		//时间戳，代表第一次该节点被发现的时间，在深度优先搜索的时候用到
+	private int f;		//时间戳，代表搜索完成对该节点的邻接链表扫描的时间
 	
 	public Vertex(T _lable) {
 		this.lable = _lable;
@@ -25,6 +30,12 @@ public class Vertex<T> {
 		this.depth = Integer.MAX_VALUE;
 	}
 	
+	/**
+	 * 将当前节点和目标节点相连，用边Edge保存
+	 * @param endVertex
+	 * @param weight
+	 * @return
+	 */
 	public boolean connect(Vertex<T> endVertex ,int weight) {
 		boolean result = false;
 		if(!this.equals(endVertex)) {
@@ -92,6 +103,10 @@ public class Vertex<T> {
 		return new WeightIterator<>(edgeList);
 	}
 	
+	/**
+	 * 获得与当前结点相连接的节点中没有被访问的节点
+	 * @return
+	 */
 	public Vertex<T> getUnVisitedVertex() {
 		NeighborIterator<T> neighborIterator = this.getNeighborIterator();
 		Vertex<T> vertex = null;
