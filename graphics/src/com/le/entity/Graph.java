@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Queue;
+import java.util.Stack;
 
 import com.le.util.Constants;
 
@@ -114,15 +115,53 @@ public class Graph<T> {
 		time ++;
 		vertex.setF(time);
 	}
+	/**
+	 * 拓扑排序，利用DFS深度搜索技术，时间复杂度为O(V+E)
+	 * @return
+	 */
+	public Stack<Vertex<T>> topologicalSort() {
+		//创建一个空的一个结点的栈，用来保存节点数据
+		Stack<Vertex<T>> vertexStack = new Stack<>();
+		
+		for(Entry<T, Vertex<T>> entry : vertexs.entrySet()) {
+			Vertex<T> vertex = entry.getValue();
+			vertex.setColor(Constants.WHITE);
+			vertex.setPreviousVertex(null);
+		}
+		time = 0;
+		for(Entry<T, Vertex<T>> entry : vertexs.entrySet()) {
+			Vertex<T> vertex = entry.getValue();
+			if(vertex.getColor() == Constants.WHITE) {
+				topo_DFS_VISIT(vertex,vertexStack);
+			}
+		}
+		return vertexStack;
+	}
+	
+	private void topo_DFS_VISIT(Vertex<T> vertex , Stack<Vertex<T>> vertexStack) {
+		time = time + 1;
+		vertex.setD(time);
+		vertex.setColor(Constants.GRAY);
+		Vertex<T> sonVertex = null;
+		while((sonVertex = vertex.getUnVisitedVertex()) != null) {
+			sonVertex.setPreviousVertex(vertex);
+			topo_DFS_VISIT(sonVertex , vertexStack);
+		}
+		vertex.setColor(Constants.BLACK);
+		time ++;
+		vertex.setF(time);
+		//根据节点扫描完成时间依次将节点推到栈中
+		vertexStack.push(vertex);
+	}
 	
 	public void printDFSPath(Vertex<T> source , Vertex<T> vertex) {
 		if(source.equals(vertex)) {
-			System.out.println("lable : " + vertex.getLable() + " , ��ʼ : " + vertex.getD() + " ���� : "+vertex.getF());
+			System.out.println("lable : " + vertex.getLable() + " , 开始: " + vertex.getD() + " 结束 : "+vertex.getF());
 		} else if(vertex.getPreviousVertex() == null){
 			System.out.println("path no exist!");
 		} else {
 			printDFSPath(source, vertex.getPreviousVertex());
-			System.out.println("lable : " + vertex.getLable() + " , ��ʼ : " + vertex.getD() + " ���� : "+vertex.getF());
+			System.out.println("lable : " + vertex.getLable() + " , 开始: " + vertex.getD() + " 结束: "+vertex.getF());
 		}
 	}
 	
@@ -153,5 +192,14 @@ public class Graph<T> {
 			Vertex<T> vertex = entry.getValue();
 			System.out.println(vertex.getLable()+" "+vertex.getColor()+" "+vertex.getD() + " "+vertex.getF());
 		}
+	}
+	
+	public void printTopoSort(Stack<Vertex<T>> vertexStack) {
+		System.out.println("size = "+vertexStack.size());
+		while(!vertexStack.empty()) {
+			Vertex<T> vertex = vertexStack.pop();
+			System.out.println("lable : " + vertex.getLable() + " f : " + vertex.getF());
+		}
+		
 	}
 }
