@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/8/19 20:58:28。
+     1>项目“E:\c\player\dynamic_programming\dynamic_programming\dynamic_programming.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\dynamic_programming.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\Vistual_Stdio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\dynamic_programming.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dynamic_programming.cpp
+         dynamic_programming.cpp
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Vistual_Stdio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\c\player\dynamic_programming\Debug\dynamic_programming.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\dynamic_programming.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\c\player\dynamic_programming\Debug\dynamic_programming.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\c\player\dynamic_programming\Debug\dynamic_programming.lib" /MACHINE:X86 Debug\dynamic_programming.exe.embed.manifest.res
+         Debug\dynamic_programming.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\dynamic_programming.exe.embed.manifest" /manifest Debug\dynamic_programming.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         dynamic_programming.vcxproj -> E:\c\player\dynamic_programming\Debug\dynamic_programming.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\dynamic_programming.unsuccessfulbuild”。
+         正在对“Debug\dynamic_programming.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\c\player\dynamic_programming\dynamic_programming\dynamic_programming.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.38
