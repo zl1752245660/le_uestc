@@ -2,7 +2,9 @@
 //
 
 #include "stdafx.h"
-
+#include "matrix_mutifly.h"
+#include "lcs_problem.h"
+#include "Longest_palindrome_subsequence.h"
 #define		LEN		100
 
 
@@ -164,11 +166,15 @@ int new_buttom_up_cut_rod(int price[],const int n,int price_len,int c)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	/*
 	int price[] = {0,1,5,8,9,10,17,17,20,24,30};
 	int price_len = sizeof(price)/sizeof(int) - 1;
 	int result = new_buttom_up_cut_rod(price, 8,price_len,1);
 	printf("result : %d\n",result);
-
+	*/
+	//solve_matrix_mutifly();
+	//solve_lcs_problem();
+	solve_palindrome_subsequence();
 	getchar();
 	return 0;
 }

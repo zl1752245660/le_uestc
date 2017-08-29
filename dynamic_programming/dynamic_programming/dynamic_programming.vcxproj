@@ -75,11 +75,19 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lcs_problem.h" />
+    <ClInclude Include="Longest_palindrome_subsequence.h" />
+    <ClInclude Include="matrix_mutifly.h" />
+    <ClInclude Include="P1024_problem.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dynamic_programming.cpp" />
+    <ClCompile Include="lcs_problem.cpp" />
+    <ClCompile Include="Longest_palindrome_subsequence.cpp" />
+    <ClCompile Include="matrix_mutifly.cpp" />
+    <ClCompile Include="P1024_problem.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

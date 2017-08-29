@@ -24,12 +24,36 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="matrix_mutifly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lcs_problem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="P1024_problem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Longest_palindrome_subsequence.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dynamic_programming.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix_mutifly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lcs_problem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1024_problem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Longest_palindrome_subsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
