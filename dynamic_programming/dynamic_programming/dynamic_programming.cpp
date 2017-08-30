@@ -6,6 +6,8 @@
 #include "lcs_problem.h"
 #include "Longest_palindrome_subsequence.h"
 #include "string_partition.h"
+#include "single_way_apple.h"
+
 #define		LEN		100
 
 
@@ -176,7 +178,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//solve_matrix_mutifly();
 	//solve_lcs_problem();
 	//solve_palindrome_subsequence();
-	solve_string_partition();
+	//solve_string_partition();
+
+	solve_single_way_apple();
+
 	getchar();
 	return 0;
 }

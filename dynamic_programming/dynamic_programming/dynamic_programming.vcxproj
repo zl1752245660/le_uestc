@@ -79,6 +79,7 @@
     <ClInclude Include="Longest_palindrome_subsequence.h" />
     <ClInclude Include="matrix_mutifly.h" />
     <ClInclude Include="P1024_problem.h" />
+    <ClInclude Include="single_way_apple.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="string_partition.h" />
     <ClInclude Include="targetver.h" />
@@ -89,6 +90,7 @@
     <ClCompile Include="Longest_palindrome_subsequence.cpp" />
     <ClCompile Include="matrix_mutifly.cpp" />
     <ClCompile Include="P1024_problem.cpp" />
+    <ClCompile Include="single_way_apple.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
