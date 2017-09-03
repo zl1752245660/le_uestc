@@ -42,6 +42,9 @@
     <ClInclude Include="single_way_apple.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="printing_neatly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -66,6 +69,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="single_way_apple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="printing_neatly.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -7,6 +7,7 @@
 #include "Longest_palindrome_subsequence.h"
 #include "string_partition.h"
 #include "single_way_apple.h"
+#include "printing_neatly.h"
 
 #define		LEN		100
 
@@ -180,7 +181,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//solve_palindrome_subsequence();
 	//solve_string_partition();
 
-	solve_single_way_apple();
+	//solve_single_way_apple();
+
+	solve_printing_neatly();
 
 	getchar();
 	return 0;
