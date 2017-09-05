@@ -8,6 +8,7 @@
 #include "string_partition.h"
 #include "single_way_apple.h"
 #include "printing_neatly.h"
+#include "increasement_sequence.h"
 
 #define		LEN		100
 
@@ -182,8 +183,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//solve_string_partition();
 
 	//solve_single_way_apple();
+	//solve_printing_neatly();
 
-	solve_printing_neatly();
+	increasing_sequence();
 
 	getchar();
 	return 0;

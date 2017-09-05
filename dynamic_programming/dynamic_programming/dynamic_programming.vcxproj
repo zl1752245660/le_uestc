@@ -75,6 +75,7 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="increasement_sequence.h" />
     <ClInclude Include="lcs_problem.h" />
     <ClInclude Include="Longest_palindrome_subsequence.h" />
     <ClInclude Include="matrix_mutifly.h" />
@@ -87,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dynamic_programming.cpp" />
+    <ClCompile Include="increasement_sequence.cpp" />
     <ClCompile Include="lcs_problem.cpp" />
     <ClCompile Include="Longest_palindrome_subsequence.cpp" />
     <ClCompile Include="matrix_mutifly.cpp" />

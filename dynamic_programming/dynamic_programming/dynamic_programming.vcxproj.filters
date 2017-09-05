@@ -45,6 +45,9 @@
     <ClInclude Include="printing_neatly.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="increasement_sequence.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -72,6 +75,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="printing_neatly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="increasement_sequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
