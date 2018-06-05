@@ -1,0 +1,51 @@
+﻿生成启动时间为 2018/5/8 15:25:53。
+     1>项目“C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\y4m_yuv\y4m_yuv.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\y4m_yuv.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\y4m_yuv.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp yuv_util.cpp
+         yuv_util.cpp
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(22): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(25): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(51): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\yuv_util.cpp(64): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(354) : 参见“vsnprintf”的声明
+         main.cpp
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(38): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(39): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 d:\vs2010\vc\include\direct.h(124) : 参见“mkdir”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\umionman\documents\visual studio 2010\projects\y4m_yuv\y4m_yuv\main.cpp(44): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+         正在生成代码...
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\Debug\y4m_yuv.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\y4m_yuv.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\Debug\y4m_yuv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\Debug\y4m_yuv.lib" /MACHINE:X86 Debug\y4m_yuv.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\main.obj
+         Debug\y4m_yuv.obj
+         Debug\yuv_util.obj
+     1>main.obj : error LNK2019: 无法解析的外部符号 "void __cdecl yuv_get_file_directory(char const *,char *)" (?yuv_get_file_directory@@YAXPBDPAD@Z)，该符号在函数 "struct Y4MContext * __cdecl init(char const *)" (?init@@YAPAUY4MContext@@PBD@Z) 中被引用
+     1>C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\Debug\y4m_yuv.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“C:\Users\umionman\documents\visual studio 2010\Projects\y4m_yuv\y4m_yuv\y4m_yuv.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.93
